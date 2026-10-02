@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hihi - Trưa nay ăn gì?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🍱 HIHI</div>
+    <div class="subtitle">TRƯA NAY ĂN GÌ?</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">🎲 RANDOM FOOD</div>
+      <h1>Hôm nay ăn gì?</h1>
+      <p>Chọn bộ lọc rồi mở két để tìm món ăn ngẫu nhiên.</p>
+
+      <div class="filters">
+        <select id="category">
+          <option value="all">🍽️ Tất cả món</option>
+          <option value="rice">🍚 Cơm</option>
+          <option value="noodle">🍜 Bún, phở & mì</option>
+          <option value="fastfood">🍔 Đồ ăn nhanh</option>
+          <option value="drink">🥤 Đồ uống</option>
+        </select>
+
+        <select id="budget">
+          <option value="all">💰 Mọi ngân sách</option>
+          <option value="30000">≤ 30.000đ</option>
+          <option value="50000">≤ 50.000đ</option>
+          <option value="80000">≤ 80.000đ</option>
+        </select>
+      </div>
+
+      <button id="openBtn" class="open-btn">🔓 KHAI MỞ KÉT</button>
+
+      <div id="result" class="result hidden">
+        <div class="rarity" id="rarity">HIẾM</div>
+        <div class="food-emoji" id="foodEmoji">🍜</div>
+        <h2 id="foodName">Phở bò</h2>
+        <p id="foodDesc">Một bát phở nóng cho ngày hôm nay.</p>
+        <strong id="foodPrice">50.000đ</strong>
+        <button id="againBtn" class="again">🎲 Mở lại</button>
+      </div>
+    </section>
+
+    <section class="inventory">
+      <div class="section-title">
+        <div>
+          <span class="small">TRONG KHO CÓ GÌ?</span>
+          <h2>Kho món ăn</h2>
+        </div>
+        <span id="count"></span>
+      </div>
+      <div id="foodGrid" class="food-grid"></div>
+    </section>
+  </main>
+
+  <footer>Made with ❤️ · Hihi Food Random</footer>
+  <script src="script.js"></script>
+</body>
+</html>
